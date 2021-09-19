@@ -82,3 +82,5 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 - HTTP Method using GET and POST from flask API
 
 ## Heroku Deployment
+
+[Credit_Risk_Exercise](https://credit-score-exercise.herokuapp.com/)
