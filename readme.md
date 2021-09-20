@@ -19,7 +19,7 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 - `loan_status`: is a dummy variable where 1 is default, 0 is not default.
 - `loan_percent_income`: is the ratio between the loan taken and the annual income.
 - `cb_person_default_on_file`: answers whether the person has defaulted before.
--`cb_person_cred_hist_length`: represents the number of years of personal history since the first loan taken from that person.
+- `cb_person_cred_hist_length`: represents the number of years of personal history since the first loan taken from that person.
 
 ## How to Use
 
