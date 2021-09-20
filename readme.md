@@ -1,3 +1,7 @@
+## Heroku Deployment Access
+
+[Credit_Risk_Exercise](https://credit-score-exercise.herokuapp.com/)
+
 # Credit Risk Exercise
 
 using `credit_risk_dataset.csv` file available under `notebooks/`
@@ -56,7 +60,8 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 
 ### Example Input and Output Format
 - This example if you want input data using `postman`
-- This input need to be post under this url `127.0.0.1:3000/pred`
+- This input need to be post under this endpoint:
+`127.0.0.1:3000/pred` or `https://credit-score-exercise.herokuapp.com/pred`
 - This input using `POST` method, with arguments:
 
 |Field|	Description|	Value|
@@ -104,7 +109,3 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
     }
 ```
 - HTTP Method using GET and POST from flask API
-
-## Heroku Deployment
-
-[Credit_Risk_Exercise](https://credit-score-exercise.herokuapp.com/)
