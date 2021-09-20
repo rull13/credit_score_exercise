@@ -62,6 +62,7 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 - This example if you want input data using `postman`
 - This input need to be post under this endpoint:
 `127.0.0.1:3000/pred` or `https://credit-score-exercise.herokuapp.com/pred`
+- `Content-Type : application/json`
 - This input using `POST` method, with arguments:
 
 |Field|	Description|	Value|
