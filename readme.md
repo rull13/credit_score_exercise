@@ -62,7 +62,10 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 - This example if you want input data using `postman`
 - This input need to be post under this endpoint:
 `127.0.0.1:3000/pred` or `https://credit-score-exercise.herokuapp.com/pred`
+#### Headers
 - `Content-Type : application/json`
+
+#### Body
 - This input using `POST` method, with arguments:
 
 |Field|	Description|	Value|
@@ -79,7 +82,7 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 |cb_person_cred_hist_length	|Credit history length.	|Integer|
 |loan_amnt|	Loan amount.|	Integer|
 
-
+#### Example JSON Input
 
 
 ```json
@@ -97,11 +100,15 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 ```
 -  After sending the input through postman, python `app.py` will return predicted data
 
+#### Output
+
 |Field|	Description|
 | --- | --- |
 |model	|Machine learning model.|
 |score_proba	|Probability estimates.|
 |version|	Model version.|
+
+#### Example JSON Output
 
 ```json
 {
