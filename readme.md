@@ -57,6 +57,22 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 ### Example Input and Output Format
 - This example if you want input data using `postman`
 - This input need to be post under this url `127.0.0.1:3000/pred`
+- This input using `POST` method, with arguments:
+
+|Field|	Description|	Value|
+| --- | --- | --- |
+|person_age	|Age.	|Integer|
+|person_income	|Annual Income.|	Integer|
+|person_home_ownership	|Home ownership.	|'RENT', 'MORTGAGE', 'OWN', or 'OTHER'|
+|person_emp_length|	Employment length (in years)	|Integer|
+|loan_intent	|Loan intent.|	'PERSONAL', 'EDUCATION', 'MEDICAL', 'VENTURE', 'HOMEIMPROVEMENT', or 'DEBTCONSOLIDATION'|
+|loan_grade|	Loan grade.|	'A', 'B', 'C, 'D', 'E', 'F', or 'G'|
+|loan_amnt|	Loan amount.|	Integer|
+|loan_int_rate|	Interest rate.	|Float|
+|loan_percent_income	|Percent income.|	Float|
+|cb_person_default_on_file	|Historical default.|	'Y', or 'N'|
+|cb_person_cred_hist_length	|Credit history length.	|Integer|
+
 ```json
 {"person_home_ownership": "MORTGAGE",
   "loan_intent": "DEBTCONSOLIDATION",
@@ -71,11 +87,19 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
   "loan_amnt": 2400}
 ```
 -  After sending the input through postman, python `app.py` will return predicted data
+
+|Field|	Description|
+| --- | --- |
+|model	|The machine learning model.|
+|score_proba	|Probability estimates.|
+|version|	Model version.|
+
 ```json
 {
         "model":"credit_risk_exercise",
-        "version": "1.0.0",
-        "score_proba":"str(result)"
+        "score_proba":"0.059884",
+        "version": "1.0.0"
+
 
     }
 ```
