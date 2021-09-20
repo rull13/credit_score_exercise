@@ -67,17 +67,20 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 
 |Field|	Description|	Value|
 | --- | --- | --- |
-|person_age	|Age.	|Integer|
-|person_income	|Annual Income.|	Integer|
 |person_home_ownership	|Home ownership.	|'RENT', 'MORTGAGE', 'OWN', or 'OTHER'|
-|person_emp_length|	Employment length (in years)	|Integer|
 |loan_intent	|Loan intent.|	'PERSONAL', 'EDUCATION', 'MEDICAL', 'VENTURE', 'HOMEIMPROVEMENT', or 'DEBTCONSOLIDATION'|
 |loan_grade|	Loan grade.|	'A', 'B', 'C, 'D', 'E', 'F', or 'G'|
-|loan_amnt|	Loan amount.|	Integer|
-|loan_int_rate|	Interest rate.	|Float|
-|loan_percent_income	|Percent income.|	Float|
 |cb_person_default_on_file	|Historical default.|	'Y', or 'N'|
+|person_age	|Age.	|Integer|
+|person_income	|Annual Income.|	Integer|
+|person_emp_length|	Employment length (in years)	|Integer|
+|loan_int_rate|	Interest rate.	|Float|
+|loan_percent_income	|Percent income.|	Float  (0.001 - 1.000)|
 |cb_person_cred_hist_length	|Credit history length.	|Integer|
+|loan_amnt|	Loan amount.|	Integer|
+
+
+
 
 ```json
 {"person_home_ownership": "MORTGAGE",
@@ -96,7 +99,7 @@ The dataset is composed by `32581` rows (observations) and `12` columns (variabl
 
 |Field|	Description|
 | --- | --- |
-|model	|The machine learning model.|
+|model	|Machine learning model.|
 |score_proba	|Probability estimates.|
 |version|	Model version.|
 
