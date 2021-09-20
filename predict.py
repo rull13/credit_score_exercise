@@ -25,6 +25,17 @@ from setting import WoECat, WoENom
 #   "cb_person_cred_hist_length": 9,
 #   "loan_amnt": 2400}
 
+features_list =["person_home_ownership",
+  "loan_intent",
+  "loan_grade",
+  "cb_person_default_on_file",
+  "person_age",
+  "person_income",
+  "person_emp_length",
+  "loan_int_rate",
+  "loan_percent_income",
+  "cb_person_cred_hist_length",
+  "loan_amnt"]
 class CustomUnpickler(pickle.Unpickler):
     def find_class(self, module, name):
         try:
@@ -49,7 +60,8 @@ def formating_data(raw_input):
 
 
     })
-    return raw_input
+    features = features_list
+    return raw_input[features]
 def preprocess_data(raw_input):
     """
     acct dictionary format input
